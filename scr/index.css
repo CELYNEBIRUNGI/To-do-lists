@@ -41,6 +41,10 @@
     border-bottom: 1px solid rgb(207, 199, 199);
     gap: 15px;
   }
+
+  form {
+    width: 80%;
+  }
   
   li #add {
     border: none;
