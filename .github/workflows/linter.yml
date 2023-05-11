@@ -1,5 +1,5 @@
-name: Linters
-
+permissions:
+  contents: read
 on: pull_request
 
 env:
