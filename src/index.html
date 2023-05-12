@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,25 +7,24 @@
    <script defer src="main.js"></script>
   </head>
   <body>
-    <h1>TO DO LISTS</h1>
-    
-      <br>
-      <div class="conitainer">
-        <p>Today's To Do</p> <span class="fa fa-refresh" aria-hidden="true"></span>
-      </div>
-      <br>
-      <div class="entrypoint" >
-        <form class="entry_form"><br>
-          <input class="editTask" type="text" name=""id="editTask"placeholder="Add task to your list..."/>
-          <span class="fa fa-long-arrow-left"aria-hidden="true"></span>
-        </form>
-        <br>
-
-      <div class="lists"></div>
-      <div class="btn-delete">
-        <button class="btn-clear" type="button">Clear all completed</button>
-      </div>
-    
+    <section class="main">
+      <h1>TO DO LISTS</h1>
+        <div class="container">
+          <p class="container-title">Today's To Do</p> <span class="fa fa-refresh" aria-hidden="true"></span>
+        </div>
+        <div class="entrypoint" >
+          <form class="entry_form"><br>
+            <div class="edit">
+              <input class="editTask" type="text" name=""id="editTask"placeholder="Add task to your list..."/>
+              <span class="fa fa-long-arrow-left arrow"aria-hidden="true"></span>
+            </div>
+            <ul class="lists">
+              <li class="todo_list">Todo 1</li>
+              <li class="todo_list">Todo 2</li>
+            </ul>
+          </form>
+          <button class="btn-clear" type="button">Clear all completed</button>
+        </div>
     </section>
   </body>
 </html>
