@@ -1,0 +1,65 @@
+
+* {
+    font-family: 'inter', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(97, 94, 94);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #eee;
+  }
+  
+  .conitainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid hsl(0, 0%, 94%);
+    box-shadow: 3px 3px 3px #8f8d8d;
+    width: 35%;
+  }
+  
+  .conitainer p {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+  
+  form {
+    width: 80%;
+  }
+  
+  input[type='text'] {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-style: italic;
+    font-size: 18px;
+  }
+  
+  .listTodo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .items {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .form-checkbox input[type='checkbox'] {
+    margin-right: 20px;
+  }
+  
+  .btn-clear {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
