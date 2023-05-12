@@ -5,27 +5,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-     <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="index.css">
+   <script defer src="main.js"></script>
   </head>
   <body>
     <h1>TO DO LISTS</h1>
     
+      <br>
       <div class="conitainer">
-        <p>Today's To Do</p>
-        <span class="fa fa-refresh" aria-hidden="true"></span>
+        <p>Today's To Do</p> <span class="fa fa-refresh" aria-hidden="true"></span>
       </div>
       <br>
-      <div class="entrypoint">
-        <form class="entry_form" onsubmit="event.preventDefault()">
-          <input class="entry" type="text" name=""id="edit"placeholder="Add task to your list..."/>
+      <div class="entrypoint" >
+        <form class="entry_form"><br>
+          <input class="editTask" type="text" name=""id="editTask"placeholder="Add task to your list..."/>
+          <span class="fa fa-long-arrow-left"aria-hidden="true"></span>
         </form>
-        <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-      </div>
-      <hr>
+        <br>
+
       <div class="lists"></div>
       <div class="btn-delete">
         <button class="btn-clear" type="button">Clear all completed</button>
       </div>
+    
     </section>
   </body>
 </html>

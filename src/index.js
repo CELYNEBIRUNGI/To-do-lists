@@ -1,16 +1,24 @@
-import _ from 'lodash';
 import './index.css';
 
+const allList = [
+  {
+    index: 1,
+    description: 'Tailwind Library',
+    complated: false,
+  },
+  {
+    index: 2,
+    description: 'Bootstrap Framework',
+    complated: false,
+  },
+  {
+    index: 3,
+    description: 'Bulmas Library',
+    complated: false,
+  },
+];
+
 const bkList = document.querySelector('.lists');
-const form = document.createElement('form');
-   form.className = 'hide';
-    form.id = `form${i}`;
-   const txt = document.createElement('input');
-   txt.type = 'text';
-   txt.id = `text${i}`;
-   txt.value = mylocaldata[i].discribtion;
-   form.appendChild(txt);
-    span.appendChild(form);
 
 const displayList = () => {
   for (let i = 0; i < allList.length; i += 1) {
