@@ -5,9 +5,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-color: #dddada;
+  background-color: #DDDADA;
   width: 90vw;
   height: 90vh;
   display: flex;
@@ -15,7 +14,6 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
 .main {
   background: #fff;
   box-shadow: 2px 1px 14px 0 rgba(70, 69, 69, 0.42);
@@ -25,11 +23,9 @@ body {
   justify-content: center;
   flex-direction: column;
 }
-
 .main h1 {
   margin-top: 10px;
 }
-
 .container {
   margin-top: 10px;
   display: flex;
@@ -38,44 +34,37 @@ body {
   border-bottom: 1px solid #dddd;
   padding: 5px;
 }
-
 .entrypoint {
   width: 100%;
 }
-
 .edit {
   display: flex;
   justify-content: space-between;
   width: 100%;
   border-bottom: 1px solid #dddd;
 }
-
 .edit .editTask {
   width: 95%;
   border: none;
   padding: 10px;
 }
-
 .arrow {
   padding-right: 5px;
 }
-
 .edit .editTask:focus {
   outline: none;
 }
-
 .lists {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-
-.todo_list {
+ .todo_list {
   border-bottom: 1px solid #dddd;
   padding: 10px;
   list-style-type: none;
   font-size: 15px;
-}
+} 
 
 .btn-clear {
   border: none;
@@ -83,8 +72,18 @@ body {
   height: 50px;
   color: gray;
 }
-
 .btn-clear:hover {
   color: black;
   text-decoration: underline;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddd;
+  padding: 10px;
+  list-style-type: none;
+  font-size: 15px;
+}
+.dots {
+  color: #8f8e8edd;
 }

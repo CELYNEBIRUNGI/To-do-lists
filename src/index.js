@@ -17,9 +17,7 @@ const allList = [
     complated: false,
   },
 ];
-
 const bkList = document.querySelector('.lists');
-
 const displayList = () => {
   for (let i = 0; i < allList.length; i += 1) {
     bkList.innerHTML += `
@@ -28,11 +26,9 @@ const displayList = () => {
         <input type="checkbox" id="check" name="check" >
         <label class="label" id="label" for="check">${allList[i].description}</label>
       </div>
-      <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+      <i class="fa fa-ellipsis-v dots" aria-hidden="true"></i>
     </div>
-    <hr>
   `;
   }
 };
-
 window.onload = displayList();
