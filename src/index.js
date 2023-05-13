@@ -1,6 +1,7 @@
 import displayList from './modules/display.js';
 import { addList, removeList, editList } from './modules/operation.js';
 import './index.css';
+
 const allList = JSON.parse(localStorage.getItem('todo')) || [];
 const bkList = document.querySelector('.lists');
 displayList(bkList, allList);
