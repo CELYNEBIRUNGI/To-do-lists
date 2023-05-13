@@ -1,5 +1,5 @@
 import displayList from './modules/display.js';
-import { addList, removeList, editList } from './modules/operations.js';
+import { addList, removeList, editList } from './modules/operation.js';
 // import './index.css';
 const allList = JSON.parse(localStorage.getItem('todo')) || [];
 const bkList = document.querySelector('.lists');
@@ -11,7 +11,7 @@ arrow.addEventListener('click', () => {
   window.location.reload();
 });
 const dots = document.querySelectorAll('.dots');
-dots.forEach(dot => {
+dots.forEach((dot) => {
   dot.addEventListener('click', () => {
     removeList(dot.parentNode.className, allList);
     window.location.reload();

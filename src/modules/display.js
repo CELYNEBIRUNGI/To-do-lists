@@ -1,27 +1,30 @@
-import displayList from './modules/display.js';
-import { addList, removeList, editList } from './modules/operations.js';
-// import './index.css';
-const allList = JSON.parse(localStorage.getItem('todo')) || [];
-const bkList = document.querySelector('.lists');
-displayList(bkList, allList);
-const edit = document.querySelector('.editTask');
-const arrow = document.querySelector('.arrow');
-arrow.addEventListener('click', () => {
-  addList(allList, edit.value);
-  window.location.reload();
-});
-const dots = document.querySelectorAll('.dots');
-dots.forEach(function (dot) {
-  dot.addEventListener('click', () => {
-    removeList(dot.parentNode.className, allList);
-    window.location.reload();
+const displayList = (lists, allList) => {
+  const createListItem = (list) => {
+    const listItem = document.createElement('li');
+    const itemDiv = document.createElement('div');
+    const checkbox = document.createElement('input');
+    const label = document.createElement('label');
+    const dots = document.createElement('i');
+    itemDiv.className = `${list.index}`;
+    label.className = 'list-desc';
+    listItem.className = `items ${list.index}`;
+    checkbox.type = 'checkbox';
+    checkbox.id = `checkbox-${list.index}`;
+    checkbox.className = 'checkbox';
+    checkbox.name = `checkbox-${list.index}`;
+    checkbox.checked = list.completed;
+    label.textContent = list.description;
+    label.setAttribute('contenteditable', 'true');
+    dots.className = 'fa fa-ellipsis-v dots';
+    itemDiv.appendChild(checkbox);
+    itemDiv.appendChild(label);
+    listItem.appendChild(itemDiv);
+    listItem.appendChild(dots);
+    return listItem;
+  };
+  allList.forEach((list) => {
+    const listItem = createListItem(list);
+    lists.appendChild(listItem);
   });
-});
-const description = document.querySelectorAll('.list-desc');
-description.forEach((desc) => {
-  desc.addEventListener('input', () => {
-    const list = desc.parentNode.className;
-    const newDesc = desc.textContent;
-    editList(list - 1, newDesc, allList);
-  });
-});
+};
+export default displayList;
