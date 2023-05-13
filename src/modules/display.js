@@ -11,7 +11,7 @@ arrow.addEventListener('click', () => {
   window.location.reload();
 });
 const dots = document.querySelectorAll('.dots');
-dots.forEach(dot => {
+dots.forEach(function (dot) {
   dot.addEventListener('click', () => {
     removeList(dot.parentNode.className, allList);
     window.location.reload();
